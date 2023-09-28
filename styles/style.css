@@ -102,3 +102,67 @@ top blog
     font-size: 16px;
     font-weight: 400;
 }
+
+/* -----------
+latest courses 
+-------------- */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 34px;
+}
+
+.course img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+.course-duration {
+    border-radius: 14.691px;
+    background: var(--ffe-4-e-8, #FFE4E8);
+    color: #FF4A60;
+    width: 95px;
+    height: 30px;
+    font-size: 15px;
+}
+
+/* -------
+responsive
+---------- */
+
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 26px;
+    }
+}
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    
+}
