@@ -1,6 +1,10 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Open+Sans&family=Poppins:wght@500&family=Satisfy&family=Sedgwick+Ave+Display&display=swap');
 
+* {
+    margin: 0;
+}
+
 /* common or utilities class */
 body {
     background: #F3F1FF;
@@ -31,6 +35,52 @@ main {
 hr {
     border: 1px solid #D1D1D1;
     margin-bottom: 30px;
+}
+
+/* navbar*/
+.navbar {
+    background: #562EFF;
+    height: 94px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo img {
+    width: 40.424px;
+    height: 51px;
+}
+
+.header-tittle {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /* ----------------
@@ -106,7 +156,7 @@ top blog
 /* -----------
 latest courses 
 -------------- */
-.courses{
+.courses {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 34px;
@@ -145,24 +195,27 @@ responsive
 ---------- */
 
 @media only screen and (max-width: 688px) {
-    .container{
+    .container {
         width: 100%;
     }
+
     .players {
         grid-template-columns: repeat(1, 1fr);
     }
-    .player{
+
+    .player {
         flex-direction: column;
     }
+
     .blogs {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .courses {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 26px;
     }
 }
-@media only screen and (min-width: 689px) and (max-width: 992px) {
-    
-}
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {}
