@@ -20,7 +20,6 @@ main {
 .container {
     background-color: #FFFFFF;
     border-radius: 5px;
-    padding: 30px;
     width: 870px;
     margin-top: 21px;
 }
@@ -41,7 +40,11 @@ hr {
 .navbar {
     background: #562EFF;
     height: 94px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
 
 .logo-container {
     display: flex;
@@ -58,12 +61,6 @@ hr {
     color: #FFF;
     font-size: 24px;
     font-weight: 500;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .navbar ul {
@@ -195,6 +192,16 @@ responsive
 ---------- */
 
 @media only screen and (max-width: 688px) {
+    .navbar {
+        height: 262px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar ul {
+        gap: 15px;
+        flex-direction: column;
+    }
+
     .container {
         width: 100%;
     }
